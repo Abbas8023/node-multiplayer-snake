@@ -12,7 +12,7 @@ node ('Ubuntu-app-agent'){
     stage('Post-to-dockerhub') {
     
      docker.withRegistry("https://registry.hub.docker.com", "docker_credentials") {
-          sh "docker push("latest")
+          sh "docker push("latest")"
         			}
          }
     stage('Pull-image-server') {

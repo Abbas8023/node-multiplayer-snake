@@ -11,8 +11,8 @@ node ('Ubuntu-app-agent'){
     }
     stage('Post-to-dockerhub') {
     
-     docker.withRegistry("https://registry.hub.docker.com", "docker_credentials") {
-          sh "docker push("latest")"
+     docker.withRegistry("https://registry.hub.docker.com", "293b98a9-2b59-4dac-94b8-7add96083b48") {
+          app.push("latest")
         			}
          }
     stage('Pull-image-server') {
